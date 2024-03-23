@@ -1,0 +1,54 @@
+/* Reset default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #d4d4d5;
+    font-family: Arial, sans-serif; /* Set a fallback font family */
+}
+
+/* Center content horizontally and vertically */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make container full height of the viewport */
+}
+
+/* Style the main content area */
+.content {
+    background-color: #ffffffd7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(53, 52, 125);
+    padding: 20px;
+    max-width: 400px; /* Limit width of content */
+}
+
+/* Style heading */
+h1 {
+    color: #1e2cc0;
+    margin-bottom: 10px;
+}
+
+/* Style paragraph text */
+p {
+    color: #3c3c3d;
+    line-height: 1.5;
+}
+
+/* Style buttons */
+button {
+    background-color: #1825b5;
+    color: #fdfdfd;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e379f;
+}

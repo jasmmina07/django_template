@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Output Page</title>
+    <link rel="stylesheet" href='../static/home.css'>
+</head>
+<body>
+
+<div class="container">
+    <h2>{{ questions.text }}</h2>
+    
+    <div class="question">
+        <p>{{ questions.number }} -> ?</p>
+    </div>
+    
+    <div class="input">
+        <label for="color">Color:</label>
+        <input type="text" id="color" name="color">
+        <button onclick="submitColor()">Submit</button>
+    </div>
+    
+    <div class="output">
+        <p>Your favorite color is: <span id="output-color"></span></p>
+    </div>
+</div>
+
+<script>
+    function submitColor() {
+        var colorInput = document.getElementById('color').value;
+        document.getElementById('output-color').innerText = colorInput;
+    }
+</script>
+
+</body>
+</html>
